@@ -1,0 +1,8 @@
+# config/config.yaml
+
+database:
+  uri: "mongodb://localhost:27017/government_performance_dashboard"
+
+app:
+  debug: True
+  port: 8050
