@@ -7,7 +7,6 @@ A platform for local residents to visualize and analyze the performance of UK Go
 - Select and view detailed analyses of UK Government departments.
 - Interactive visualizations of budget allocations, staffing, services, programs, and performance metrics.
 - Correlation and regression analyses to assess value for money.
-- Scalable architecture for national-level deployment.
 
 ## Getting Started
 
