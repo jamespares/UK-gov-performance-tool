@@ -3,7 +3,11 @@
 import dash
 import dash_bootstrap_components as dbc
 from dash import html
-from config import config  # Assuming you have a config.py or similar
+import yaml
+
+# Load the config.yaml file
+with open("app_config/config.yaml", "r") as file:
+    config = yaml.safe_load(file)
 
 from src.layout import layout
 from src.callbacks import register_callbacks
@@ -21,4 +25,4 @@ app.layout = layout
 register_callbacks(app)
 
 if __name__ == "__main__":
-    app.run_server(debug=config.app['debug'], port=config.app['port'])
+    app.run_server(debug=config['app']['debug'], port=config['app']['port'])

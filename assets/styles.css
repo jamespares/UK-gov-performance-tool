@@ -1,15 +1,28 @@
 /* assets/styles.css */
 
-body {
-    background-color: #f8f9fa;
-}
-
-h1 {
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 40px;
-}
-
+/* Dropdown container styling */
 .dcc-dropdown {
-    margin-bottom: 20px;
+    font-size: 12px;
+    padding: 5px;
+    width: 100%;  /* Ensure full width */
+}
+
+/* Adjust the control box to be larger */
+.Select__control {
+    width: 400px;  /* Increase width of dropdown */
+    min-height: 35px;  /* Adjust height */
+}
+
+/* Adjust the dropdown menu to display long department names */
+.Select__option {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;  /* Add ellipsis for long department names */
+    font-size: 12px;  /* Smaller font size */
+}
+
+/* Adjust the dropdown menu itself */
+.Select__menu {
+    max-height: 250px;
+    overflow-y: auto;  /* Enable scroll if too many options */
 }
